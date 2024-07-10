@@ -1,0 +1,21 @@
+#cursor-effect {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    background-color: transparent;
+    border-radius: 50%;
+    background-image: radial-gradient(farthest-corner at center, #f00, #fff);
+    }
+
+    /* Gradient styles for the cursor effect */
+    #cursor-effect::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: radial-gradient(farthest-corner at center, #f00, #fff);
+    background-size: cover;
+    }
